@@ -8,21 +8,17 @@ def get_flight_data():
 	data = json.loads(response.read())
 	return data["states"]
 
-
 def euclidean_dist(p, q):
 	return math.sqrt((q[0] - p[0]) ** 2 + (q[1] - p[1]) ** 2)
-
 
 def haversine_dist(p, q):
 	# TBA
 	return None
 
-
 def distance(x, y):
 	if (None in (x[0], x[1], y[0], y[1])): 
 		return math.inf
 	return euclidean_dist(x,y)
-
 
 def find_nearest_plane(latitude, longitude):
 	planes  = get_flight_data()
@@ -43,5 +39,3 @@ find_nearest_plane(48.8584, 2.2945)
 # John F. Kennedy Airport
 find_nearest_plane(40.6413, 73.7781)
 
-
-#print_plane(find_nearest_plane(48.8584, 2.2945))
