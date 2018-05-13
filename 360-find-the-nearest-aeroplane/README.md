@@ -1,7 +1,5 @@
 # Challenge #360 [Intermediate]: Find the Nearest Aeroplane
 
-_The following is copied from dailyprogrammer's [Challenge #360](https://www.reddit.com/r/dailyprogrammer/comments/8i5zc3/20180509_challenge_360_intermediate_find_the/)_
-
 ### Description
 We want to find the closest airborne aeroplane to any given position in North America or Europe. To assist in this we can use an API which will give us the data on all currently airborne commercial aeroplanes in these regions.
 
